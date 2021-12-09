@@ -231,12 +231,12 @@
         [Exposed=Window]
         interface WindowControlsOverlayGeometryChangeEvent : Event {
           constructor(DOMString type, WindowControlsOverlayGeometryChangeEventInit eventInitDict);
-          [SameObject] readonly attribute DOMRect boundingRect;
+          [SameObject] readonly attribute DOMRect titleBarAreaRect;
           readonly attribute boolean visible;
         };
 
         dictionary WindowControlsOverlayGeometryChangeEventInit : EventInit {
-          required DOMRect boundingRect;
+          required DOMRect titleBarAreaRect;
           boolean visible = false;
         };
       </pre>
